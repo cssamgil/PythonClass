@@ -58,7 +58,7 @@ def cipher():
             # spaces and special characters are not being change
             else:
                 result += char
-        # creates a new .txt file adding _dec at the end of the original file's name
+        # creates a new .txt file adding _denc at the end of the original file's name
         f = open(file_name2 + "_enc.txt", "x")
         f.write(result)
         print('\nEncrypted text: ', result)
