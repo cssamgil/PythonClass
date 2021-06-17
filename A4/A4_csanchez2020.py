@@ -95,17 +95,12 @@ def trend_plot():
         display_file = display_file.upper()
         check = 'ED'
 
-    if display_file == "D":
-        print("display")
-    elif display_file == "F":
-        print("file")
-
     epa_file.close()
 
     pylab.plot(x, y)
     pylab.ylabel(title)
     pylab.xlabel("Year")
-    pylab.title("EPA annual average highway MPG data")
+    pylab.title("EPA annual average MPG data")
 
     if display_file == "D":
         pylab.show()
